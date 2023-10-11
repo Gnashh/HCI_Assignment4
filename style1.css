@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Raleway", sans-serif
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #bbf;
+    padding: 10px;
+    text-align: center;
+  }
+
+  body {
+    background-image: url('Back2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 0;
+    }
+
+  .data {  
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 100%;
+    }  
+
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dfb;
+    position: sticky;
+    top: 0;
+    
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: darkslategray;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: #ddd;}
+  
+  ul.topnav li.right {float: right;}
+  
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+    max-width: 500px;
+    max-height: auto;
+    margin: auto;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 30px;  
+  }
+
+  p {
+    font-size: 25px;
+    text-align: justify;
+  }
+  
+  .column li a, .column li{
+    font-size: 25px;
+  }
+
+  fieldset{
+    height: 250px;
+  }
+
+.rowlog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #6882bb;
+    text-align: center;
+    padding: 20px;
+  }
+  .logo-container {
+    display: flex;
+  }
+  .logo {
+    width: 100px; 
+    height: auto; 
+    margin: 10px; 
+  }
+
+  @media screen and (max-width:800px) {
+    .column {
+      width: 100%;
+    }
+     ul.topnav li.right, ul.topnav li {
+        float: none;
+    }     
+  }
